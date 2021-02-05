@@ -11,6 +11,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <h1>ocurrio un error contactate con nosotros </h1>
         </div>
     </form>
 </body>
