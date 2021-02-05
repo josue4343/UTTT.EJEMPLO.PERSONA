@@ -240,7 +240,7 @@ namespace UTTT.Ejemplo.Persona
             }
             catch (Exception _e)
             {
-                this.showMessage("Ha ocurrido un error inesperado");
+                this.showMessage("Ha ocurrido un error no esperado");
             }
         }
 
