@@ -49,7 +49,7 @@
                 Width="1067px" CellPadding="3" GridLines="Horizontal" 
                 onrowcommand="dgvPersonas_RowCommand" BackColor="White" 
                 BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" 
-                ViewStateMode="Disabled">
+                ViewStateMode="Disabled" OnSelectedIndexChanged="dgvPersonas_SelectedIndexChanged">
                 <AlternatingRowStyle BackColor="#F7F7F7" />
                 <Columns>
                     <asp:BoundField DataField="strClaveUnica" HeaderText="Clave Unica" 

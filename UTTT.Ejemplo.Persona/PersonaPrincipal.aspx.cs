@@ -30,7 +30,7 @@ namespace UTTT.Ejemplo.Persona
         {
             try
             {
-                Response.Buffer = true;
+                
                 DataContext dcTemp = new DcGeneralDataContext();
                 if (!this.IsPostBack)
                 {
@@ -199,5 +199,10 @@ namespace UTTT.Ejemplo.Persona
         }
 
         #endregion
+
+        protected void dgvPersonas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
