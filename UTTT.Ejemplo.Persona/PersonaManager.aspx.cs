@@ -87,7 +87,19 @@ namespace UTTT.Ejemplo.Persona
                         this.txtCp.Text = this.baseEntity.Cp;
                         this.txtRfc.Text = this.baseEntity.Rfc;
 
+                 
+
                         this.setItem(ref this.ddlSexo, baseEntity.CatSexo.strValor);
+
+                        DateTime? fecha = this.baseEntity.calendario;
+                        this.fecha.Value = fecha.ToString();
+
+                   
+
+                        this.Calendar1.TodaysDate = (DateTime)fecha;
+                        this.Calendar1.SelectedDate = (DateTime)fecha;
+
+
                         ddlSexo.Items.FindByValue("-1").Enabled = false;
                         int valor = baseEntity.CatSexo.id;
                         if (valor == 0)
@@ -100,9 +112,10 @@ namespace UTTT.Ejemplo.Persona
                         {
                             ddlSexo.Items.FindByValue("1").Enabled = true;
                         }
-                        DateTime? fecha = this.baseEntity.calendario;
-                        this.fecha.Value = fecha.ToString();
-                        
+                     
+
+                     
+
 
 
 
